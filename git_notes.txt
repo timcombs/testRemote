@@ -1,0 +1,51 @@
+ 1 file changed, 68 insertions(+), 1 deletion(-)
+~/uge_workshop master ✔ git status
+On branch master
+nothing to commit, working directory clean
+~/uge_workshop master ✔ git diff
+~/uge_workshop master ✔ git diff
+~/uge_workshop master ✔ git status diff
+On branch master
+nothing to commit, working directory clean
+~/uge_workshop master ✔ git status
+On branch master
+nothing to commit, working directory clean
+~/uge_workshop master ✔ git log
+commit 45378c57f2f72014396a390e3c660828e7678e01
+Author: Tim Combs <tim00combs@gmail.com>
+Date:   Sat Aug 22 14:29:18 2015 -0700
+
+    new changes to the file
+
+commit 344341902bb1ff74cad104f73dc85159bae43b49
+Author: Tim Combs <tim00combs@gmail.com>
+Date:   Sat Aug 22 13:59:46 2015 -0700
+
+    the git notes file for codeFellows
+~/uge_workshop master ✔ git branch
+* master
+
+
+
+// git branch <name> creates a new branch
+// all of the git commands will apply inside each branch
+// this new branch is a duplicate of whatever branch we
+// are on when we create the new branch
+~/uge_workshop master ✔ git branch git-notes
+~/uge_workshop master ✔ git branch
+  git-notes
+* master
+~/uge_workshop master ✔ git checkout git-notes
+Switched to branch 'git-notes'
+
+// shows that we have moved to a new branch
+~/uge_workshop git-notes ✔ git branch
+* git-notes
+  master
+
+
+// touch creates an empty file
+// mostly we use this as a placeholder.
+~/uge_workshop git-notes ✔ touch git_notes.txt
+~/uge_workshop git-notes ✖ subl git_notes.txt
+~/uge_workshop git-notes ✖
