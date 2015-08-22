@@ -1,3 +1,48 @@
+ // creating remotes and pushing and pulling
+
+// git remote -v checks for remote repositories
+// if you have a remote then it will give you the
+// url for fetch and push. the url for fetch is the same
+// url for pull.
+
+// having a remote repository allows multiple people to
+// work on the same project. they can push changes to
+// the remote and pull others' changes
+
+// to create a remote repository we are using gitHub
+// create it and then use the push existing repository
+// code-- git remote add origin https://of remote --
+// in terminal to add remote
+// does not matter what branch you are in to do that
+// this affects the whole repository
+
+// once the remote repository is added then
+// git remote -v will give the urls as stated above
+
+// git push -u origin master then will set the default
+// remote as the origin for this project
+
+
+ the git notes file for codeFellows
+~/uge_workshop master ✔ git push -u origin master
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 3.47 KiB | 0 bytes/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+To https://github.com/timcombs/testRemote.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+~/uge_workshop master ✔ git remote -v
+origin  https://github.com/timcombs/testRemote.git (fetch)
+origin  https://github.com/timcombs/testRemote.git (push)
+~/uge_workshop master ✔ git checkout git-notes
+Switched to branch 'git-notes'
+~/uge_workshop git-notes ✔
+
+
+
+
  1 file changed, 68 insertions(+), 1 deletion(-)
 ~/uge_workshop master ✔ git status
 On branch master
