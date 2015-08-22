@@ -1,0 +1,396 @@
+pwd
+
+
+// | pipe - allows the chaining of commands
+history | cat
+history | less
+history
+man history
+history 25
+history 5
+cd Downloads/
+cd Applications/
+
+
+// why are the manual entries written so confusingly?
+// why do programmers hate clear language?
+man rmdir
+
+
+// What are reasons you use the backlash to escape?
+rmdir My\ Dir
+mkdir My\ Dir
+rmdir My Dir
+rm My/
+rm /My
+rm My
+mkdir My Dir
+cd /
+cd /Users/knowledgeBox
+man cd
+man ls
+ls -f
+ls -at
+ls -a
+ls -e
+ls -1
+ls -2
+ls -l@
+ls -@
+man pwd
+manls
+ls -ltr
+ls -r
+ls -rt
+ls -helpo
+ls --help
+ls -l --help
+ls -lt
+ls -help
+ls -c
+ls -t
+ls -h
+ls /Users/knowledgeBox/
+rm /Users/knowledgeBox/neat.txt
+pwed
+man xargs
+xargs --help
+man chmod
+man -h
+man sudo
+
+
+
+// was looking this up online and was told to use the flag -d
+// it gives me an error, but was supposed to print out the
+// the newline characters so returns are echo'd.
+// it does not. How to do this in Terminal?
+xargs \n
+xargs -d\n
+xargs
+echo 1 2 3 4 | xargs -n 2
+echo 1 2 3 4 | xargs -n 4
+echo 1234 | xargs -n 2
+echo 1234 | xargs -n 4
+echo 1234 | xargs -n 1
+echo 1 2 3 4 | xargs -n 3
+echo 1234
+xargs echo
+echo 1234 | xargs echo
+xargs man
+
+
+// by connecting subl to the terminal i can open files in
+// sublime text. can I do this for other applications??
+subl ~/Desktop/Repos/blackjack_game/blackjack_cards.js
+subl
+exit
+rm test.txt test2.txt test3.txt test4.txt
+rm -rf COOL STOKED WOW
+rm -rf newplace
+ls ~/temp/newplace
+rmdir something/
+rm something/
+rm so
+ls ~/temp/something/
+rm something/awesome.txt something/thirdmove.txt
+cd temp
+cd something
+cp -r something newplace
+cp -4 something newplace
+rm iamcool.txt thefourthfile.txt neat.txt
+rm uncool.txt
+cat test4.txt
+cat test3.txt
+cat
+cat test.txt test2.txt
+cat test.txt
+cat test2.txt
+less test2.txt
+less test.txt
+cp ~/Desktop/test.txt ~/temp
+mv awesome.txt ~/temp/something/thirdmove.txt
+cd COOL
+mv awesome.txt ~/temp/COOL/awesome.txt
+mv awesome.txt cool/awesome.txt
+cd newplace
+mv oldplace/ newplace
+cd oldplace
+mv newplace oldplace
+mv awesome.txt uncool.txt
+cd cool
+ls ~/Desktop/
+cp neat.txt ~/Desktop/
+cp neat.text ~/Desktop/
+cp neat.txt ~/Users/knowledgeBox/
+cp neat.txt ~ /Users/knowledgeBox/Desktop/
+cp neat.tx ~ /Users/knowledgeBox/Desktop/
+cp neat.txt ~
+cp iamcool.txt ~/Users/knowledgeBox/Desktop/
+cp iamcool.txt ~/Users/knowledgeBox/Desktop
+cp iamcool.txt STOKED/
+cp iamcool.txt ../Users/knowledgeBox
+cp iamcool.txt Users/knowledgeBox/Desktop
+cp -r COOL STOKED
+cp -r WOW COOL
+ls temp/
+ls temp
+ls newplace/
+ls something/
+cd newplace/
+ls newplace
+cp awesome.txt something/
+mkdir something
+cp awesome.txt thefourthfile.txt
+cp neat.txt awesome.txt
+cp iamcool.txt neat.txt
+cd wow
+rmdir WOW
+rmdir
+touch another.txt
+mkdir WOW
+rmdir primates
+rmdir humanoids/
+rmdir people
+rmdir enemies
+rmdir acquaintances
+rmdir friends
+rmdir lovers
+rmdir bad
+rmdir good
+cd lovers
+cd primates/humanoids/people/
+touch iamcool.txt
+
+
+// I am still very confused about pushd and popd
+// I need a visual guide to explain the stack of
+// remembered directories and how these move between them
+popd
+cd ../../acquaintances/
+pushd humanoids/people/lovers/WOW/
+pushd cd humanoids/people/lovers/WOW/
+pushd cd../lovers.WOW
+cd ../lovers/WOW
+pushd humanoids/people/friends
+cd ../../..
+pushd users/knowledgeBox/temp/primates/humanoids
+cd /Users/knowledgeBox/temp/primates/
+lis
+pushd cd /Users/knowledgeBox/temp/primates
+cd good
+cd humanoids/people/lovers
+cd friends
+mkdir bad
+mkdir good
+mkdir acquaintances
+mkdir enemies
+mkdir lovers
+mkdir friends
+mkdir -p primates/humanoids/people/
+rmdir i
+rmdir like
+rmdir icecream/
+cd icecream/
+cd like
+cd i
+rmdir "I Have Fun"
+rmdir Lets
+rmdir Only
+rmdir GO
+pushd
+pushd i/like/icecream
+pushd icecream
+pushd i/like
+push i/like/icecream
+
+
+// What is the flag -p for in when using the command mkdir?
+mkdir -p i/like/icecream
+rmdir bucket
+rmdir hole
+rmdir water
+rmdir ice
+rmdir cold
+cd cold
+cd ice
+cd temp/bucket/hole/water
+cd hole/water/ice
+rmdir molecules/
+cd temp/bucket/
+cd
+rmdir atoms
+rmdir electrons
+rmdir quarks
+rmdir cthulhu/
+cd cthulhu
+cd molecules/atoms/electrons/quarks
+cd ice/cold
+cd hole/water
+cd bucket
+rmdir heroes
+rmdir victims
+rmdir swiss
+rmdir colleagues
+rmdir villains
+rmdir saviors
+rmdir neutrals
+rmdir genocide
+mkdir genocide
+mkdir swiss
+mkdir neutrals
+mkdir villains
+mkdir heroes
+cd ../../../../../../../
+cd../../../../../../../../
+mkdir cthulhu
+cd quarks
+mkdir quarks
+cd electrons
+mkdir electrons
+mkdir
+cd atoms
+mkdir atoms
+cd molecules/
+mkdir molecules
+mkdir cold
+mkdir ice
+cd water
+mkdir water
+cd hole
+mkdir hole
+mkdir bucket
+mkdir saviors
+mkdir victims
+mkdir colleagues
+rm -rf notstuff/
+rmdir notstuff/
+rmdir isms
+rmdir postructuralism/
+rmdir postmodernism/
+cd isms
+rm -rf religions/
+rmdir religions/
+rm -rf christianity/
+rmdir christianity/
+rmdir protestant
+rmdir catholic/
+rmdir southernbaptist
+rmdir presbyterian/
+rmdir methodist
+rmdir lutheran
+rmdir episcopalian/
+cd protestant
+cd christianity/
+cd religions
+cd notstuff
+
+
+// When using rmdir the flag r is recursive, which means
+to get rid of everything. what is the flag f for?
+rm -rf stuff
+rmdir -rf stuff
+rmdir stuff
+rm -rf things
+cd things
+cd stuff
+rmdir things
+rmdir animals
+rmdir fish
+rmdir dogs
+rmdir cats
+cd animals
+cd temp/stuff
+rmdir joe
+cd joe
+joe
+cd things/frank/joe
+rmdir man
+dir
+cd things/frank/joe/alex
+rmdir alex
+cd john
+cd alex
+cd frank
+cd ales
+rmdir ale
+rmdir john
+cd stuff/things/frank/joe/alex/john/
+cd public
+cd downloads
+ls -lR
+temp
+cd ../../../
+cd temo
+cd "I Have Fun/"
+cd Documents/
+cd docu
+cd /Users/
+ld
+list dir
+cd ../../../..
+cd /Users/knowledgeBox/temp/stuff/things/frank/joe
+cd things/
+cd st
+mkdir Only Lets GO
+mkdir "I Have Fun"
+cd~
+mkdir presbyterian
+mkdir southernbaptist
+mkdir episcopalian
+mkdir lutheran
+cd /Users/knowledgeBox/temp/notstuff/religions/christianity/protestant/
+mkdir -p temp/notstuff/religions/christianity/protestant/methodist
+mkdir -p temp/notstuff/religions/christianity/catholic
+mkdir temp/notstuff/isms/postmodernism
+mkdir temp/notstuff/isms/postructuralism
+mkdir temp/notstuff/isms
+mkdir temp/notstuff
+mkdir temp/stuff/animals/fish
+mkdir temp/stuff/animals/cats
+mkdir temp/stuff/animals/dogs
+mkdir temp/stuff/animals
+mkdkir /temp/animals
+mkdir -p temp/stuff/things/frank/joe/alex/john
+cd /temp/stuff/things
+mkdir -p mkdir -p temp/stuff/things/frank/joe/alex/john
+mkdir temp/stuff/things/frank/joe/alex/john
+mkdir temp/stuff/things
+mkdir temp/stuff
+mkdir temp/
+mkdir temp
+cd /Users/knowledgeBox/Desktop/Repos/donut_shop_rock
+cd /Desktop/Repos
+subl ~ /Users/knowledgeBox/Desktop/Repos/STAGING/donut_shop2.html
+curl -fsSL http://git.io/QxUaOQ | sh
+curl -fsSL http://git.io/QxUaOQ | shh
+curl -fsSL http://git.io/QxUa0Q | sh
+curl -fsSL http://git.io/7UHtNA | sh
+git config --global user.email "tim00combs@gmail.com"
+git config --global user.name "Tim Combs"
+git --version
+brew install git
+echo $PATH
+subl /etc/paths
+echo $EDITOR
+echo EDITOR
+subl ~/.config/fish/config.fish
+ln -s /Applications//Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+
+
+// What is the command brew doing?
+brew info fish
+killall fishd
+brew in
+fish_update_completions
+curl -fsSL http://git.io/beJs | ruby
+chsh -s /usr/local/bin/fish
+echo '/usr/local/bin/fish' | sudo tee -a /etc/shells
+brew install fish
+brew doctor
+brew update
+ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/install/master/install)"
+ls -G
+ls -g
+uname
+gcc
